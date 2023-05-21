@@ -1,0 +1,701 @@
+{
+	"info": {
+		"_postman_id": "0bacd483-9a79-4cd8-a733-95feb13d4bc0",
+		"name": "BPARE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14848448"
+	},
+	"item": [
+		{
+			"name": "Example",
+			"item": [
+				{
+					"name": "Example1 - Server - Success Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\":1,\n\t\"userToken\":\"myToken\",\n\t\"condition\":{\n\t\t\"ruleID\":100,\n\t\t\"kwargs\":{\n\t\t\t\"accountName\":\"ABC\",\n\t\t\t\"containData\":\"the\"\n\t\t}\n\t},\n\n\t\"action\":[\n\t\t{\n\t\t\t\"actionID\":100,\n\t\t\t\"kwargs\":{\n\t\t\t\t\"data\":\"HelloWorld!\",\n\t\t\t\t\"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n\t\t\t}\n\t\t}\n\t],\n\n\t\"interval\":\"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example1 - Server - Fail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\":1,\n\t\"userToken\":\"myToken\",\n\t\"condition\":{\n\t\t\"ruleID\":100,\n\t\t\"kwargs\":{\n\t\t\t\"accountName\":\"ABC\",\n\t\t\t\"containData\":\"asdfasjhdgfjhasdgfhj\"\n\t\t}\n\t},\n\n\t\"action\":[\n\t\t{\n\t\t\t\"actionID\":100,\n\t\t\t\"kwargs\":{\n\t\t\t\t\"data\":\"HelloWorld!\",\n\t\t\t\t\"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n\t\t\t}\n\t\t}\n\t],\n\n\t\"interval\":\"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example2 - Server - Success Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\": 1,\n\t\"userToken\": \"myToken\",\n\t\"condition\": {\n\t\t\"ruleID\": 700,\n\t\t\"kwargs\": {\n\t\t\t\"rssURL\": \"https://www.nasa.gov/rss/dyn/breaking_news.rss\",\n\t\t\t\"title\": \"NASA\"\n\t\t}\n\t},\n\t\"action\": [\n\t\t{\n\t\t\t\"actionID\": 100,\n\t\t\t\"kwargs\": {\n\t\t\t\t\"data\": \"HelloWorld!\",\n\t\t\t\t\"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"actionID\": 100,\n\t\t\t\"kwargs\": {\n\t\t\t\t\"data\": \"HelloWorld!\",\n\t\t\t\t\"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n\t\t\t}\n\t\t}\n\t],\n\t\"interval\": \"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example2 - Server - Fail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\": 1,\n\t\"userToken\": \"myToken\",\n\t\"condition\": {\n\t\t\"ruleID\": 700,\n\t\t\"kwargs\": {\n\t\t\t\"rssURL\": \"https://www.nasa.gov/rss/dyn/breaking_news.rss\",\n\t\t\t\"title\": \"EEEEEEKKKKKKQQQQQQ\"\n\t\t}\n\t},\n\t\"action\": [\n\t\t{\n\t\t\t\"actionID\": 100,\n\t\t\t\"kwargs\": {\n\t\t\t\t\"data\": \"HelloWorld!\",\n\t\t\t\t\"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"actionID\": 100,\n\t\t\t\"kwargs\": {\n\t\t\t\t\"data\": \"HelloWorld!\",\n\t\t\t\t\"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n\t\t\t}\n\t\t}\n\t],\n\t\"interval\": \"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example3 - Server - Success",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"UID\": 1,\n  \"userToken\": \"myToken\",\n  \"condition\": {\n    \"operator\": \"AND\",\n    \"ruleA\": {\n      \"operator\": \"NOT\",\n      \"ruleA\": {\n        \"ruleID\": 110,\n        \"kwargs\": {\n          \"accountName\": \"abc\",\n          \"timePeriod\": \"30second\"\n        }\n      }\n    },\n    \"ruleB\": {\n      \"operator\": \"AND\",\n      \"ruleA\": {\n        \"operator\": \"NOT\",\n        \"ruleA\": {\n          \"ruleID\": 710,\n          \"kwargs\": {\n            \"rssURL\": \"https://www.nasa.gov/rss/dyn/breaking_news.rss\",\n            \"timePeriod\": \"10second\"\n          }\n        }\n      },\n      \"ruleB\": {\n        \"ruleID\": 10,\n        \"kwargs\": {\n          \"givenTime\": \"2022-Aug-31 23:59:00\"\n        }\n      }\n    }\n  },\n  \"action\": [\n    {\n      \"actionID\": 100,\n      \"kwargs\": {\n        \"data\": \"test data\",\n        \"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n      }\n    }\n  ],\n  \"interval\": \"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example3 - Server - Fail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"UID\": 1,\n  \"userToken\": \"myToken\",\n  \"condition\": {\n    \"operator\": \"AND\",\n    \"ruleA\": {\n      \"operator\": \"NOT\",\n      \"ruleA\": {\n        \"ruleID\": 110,\n        \"kwargs\": {\n          \"accountName\": \"ABC\",\n          \"timePeriod\": \"1year\"\n        }\n      }\n    },\n    \"ruleB\": {\n      \"operator\": \"AND\",\n      \"ruleA\": {\n        \"operator\": \"NOT\",\n        \"ruleA\": {\n          \"ruleID\": 710,\n          \"kwargs\": {\n            \"rssURL\": \"https://www.nasa.gov/rss/dyn/breaking_news.rss\",\n            \"timePeriod\": \"10second\"\n          }\n        }\n      },\n      \"ruleB\": {\n        \"ruleID\": 10,\n        \"kwargs\": {\n          \"givenTime\": \"2022-Aug-31 23:59:00\"\n        }\n      }\n    }\n  },\n  \"action\": [\n    {\n      \"actionID\": 100,\n      \"kwargs\": {\n        \"data\": \"test data\",\n        \"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n      }\n    }\n  ],\n  \"interval\": \"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example4 - Server - Success",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\":0,\n\t\"userToken\":\"myToken\",\n\t\"condition\":{\n        \"operator\":\"OR\",\n        \"ruleA\":{\n            \"ruleID\": 030,\n            \"kwargs\":{\n                \"id\": \"894564fc8dde4863ab3d8fb78833ec5c\"\n            }\n        },\n        \"ruleB\":{\n            \"ruleID\": 031,\n            \"kwargs\":{\n                \"id\": \"894564fc8dde4863ab3d8fb78833ec5c\",\n                \"ipCountry\":\"Australia\"\n            }\n        }\n    },\n\n\t\"action\":[\n        {\n            \"actionID\":100,\n            \"kwargs\":{\n                \"data\":\"HelloWorld!\",\n                \"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n            }\n        }\n\t],\n\n\t\"interval\":\"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example4 - Server - Fail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\":0,\n\t\"userToken\":\"myToken\",\n\t\"condition\":{\n        \"operator\":\"OR\",\n        \"ruleA\":{\n            \"ruleID\": 030,\n            \"kwargs\":{\n                \"id\": \"ae55618717df433faa5e1d8a6575bdd4\"\n            }\n        },\n        \"ruleB\":{\n            \"ruleID\": 031,\n            \"kwargs\":{\n                \"id\": \"ae55618717df433faa5e1d8a6575bdd4\",\n                \"ipCountry\":\"Australia\"\n            }\n        }\n    },\n\n\t\"action\":[\n        {\n            \"actionID\":100,\n            \"kwargs\":{\n                \"data\":\"HelloWorld!\",\n                \"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n            }\n        }\n\t],\n\n\t\"interval\":\"once\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Empty_Query",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare?UID=2",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									],
+									"query": [
+										{
+											"key": "UID",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "POST_Empty_Body",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_Once",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"UID\":1,\n\t\"userToken\":\"myToken\",\n\t\"condition\":{\n\t\t\"ruleID\":100,\n\t\t\"kwargs\":{\n\t\t\t\"accountName\":\"ABC\",\n\t\t\t\"containData\":\"the\"\n\t\t}\n\t},\n\t\"action\":[\n\t\t{\n\t\t\t\"actionID\":100,\n\t\t\t\"kwargs\":{\n\t\t\t\t\"data\":\"HelloWorld!\",\n\t\t\t\t\"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=bob\"\n\t\t\t}\n\t\t}\n\t],\n\t\"interval\":\"once\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_Repeat",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"UID\":10,\n  \"userToken\":\"myToken\",\n  \"condition\":{\n    \"ruleID\":130,\n    \"kwargs\":{\n        \"accountName\":\"ABC\",\n        \"startDate\":\"2021-Aug-31 23:59:00\",\n        \"endDate\":\"2022-Sep-15 23:59:00\"\n    }\n  },\n  \"action\":[\n    {\n      \"actionID\":100,\n      \"kwargs\":{\n        \"data\":\"HelloWorld!\",\n        \"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n      }\n    }\n  ],\n  \"interval\":\"yearly\",\n  \"nextExecuteDate\":1663165405094\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST_Date_Range",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"UID\": 1,\n  \"userToken\": \"myToken\",\n  \"condition\": {\n    \"ruleID\": 830,\n    \"kwargs\": {\n      \"user\": \"GalaxyHBXY\",\n      \"startDate\": \"2021-Aug-31 23:59:00\",\n      \"endDate\": \"2022-Sep-15 23:59:00\"\n    }\n  },\n  \"action\": [\n    {\n      \"actionID\": 100,\n      \"kwargs\": {\n        \"data\": \"HelloWorld!\",\n        \"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n      }\n    }\n  ],\n  \"interval\": \"once\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Put",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"UID\": 2,\n    \"userToken\": \"myToken\",\n    \"condition\": {\n        \"operator\": \"AND\",\n        \"ruleA\": {\n            \"operator\": \"NOT\",\n            \"ruleA\": {\n                \"ruleID\": 110,\n                \"kwargs\": {\n                    \"account\": \"ABC News\",\n                    \"timePeriod\": \"1month\"\n                }\n            }\n        },\n        \"ruleB\": {\n            \"operator\": \"AND\",\n            \"ruleA\": {\n                \"operator\": \"NOT\",\n                \"ruleA\": {\n                    \"ruleID\": 710,\n                    \"kwargs\": {\n                        \"rssURL\": \"https://www.myblog.com\",\n                        \"timePeriod\": \"1month\"\n                    }\n                }\n            },\n            \"ruleB\": {\n                \"ruleID\": 10,\n                \"kwargs\": {\n                    \"givenTime\": \"2022-Aug-31 23:59\"\n                }\n            }\n        }\n    },\n    \"action\": [\n        {\n            \"actionID\": 100,\n            \"kwargs\": {\n                \"data\": \"test data\",\n                \"apiURL\": \"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=\"\n            }\n        }\n    ],\n    \"interval\": \"once\",\n    \"nextExecuteDate\": 1663165405099,\n    \"id\": \"1edd1d50-f4e4-41cf-8c03-36a38246b367\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Empty_Query",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/bpare?UID=1&id=80225af72cce442d9865e317a526804f",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"bpare"
+									],
+									"query": [
+										{
+											"key": "UID",
+											"value": "1"
+										},
+										{
+											"key": "id",
+											"value": "80225af72cce442d9865e317a526804f"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CountDownTimer",
+			"item": [
+				{
+					"name": "Reset",
+					"item": [
+						{
+							"name": "Invalid_Reset",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/reset",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"reset"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Timer_NotFound_Reset",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"894564fc8dde4863ab3d8fc5c\",\n    \"UID\": 1,\n    \"nextExecuteDate\": 1763165405094\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/reset",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"reset"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Timer_Valid",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"894564fc8dde4863ab3d8fb78833ec5c\",\n    \"UID\": 1,\n    \"nextExecuteDate\": 1763165405094\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://zeweishi.azurewebsites.net/api/reset",
+									"protocol": "https",
+									"host": [
+										"zeweishi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"reset"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Timer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"UID\":1,\n\t\"userToken\":\"myToken\",\n\t\"condition\":{\n\t\t\"ruleID\":100,\n\t\t\"kwargs\":{\n\t\t\t\"accountName\":\"ABC\",\n\t\t\t\"containData\":\"the\"\n\t\t}\n\t},\n\t\"action\":[\n\t\t{\n\t\t\t\"actionID\":100,\n\t\t\t\"kwargs\":{\n\t\t\t\t\"data\":\"HelloWorld!\",\n\t\t\t\t\"apiURL\":\"https://6310263f36e6a2a04ee6eca1.mockapi.io/123/?name=bob\"\n\t\t\t}\n\t\t}\n\t],\n\t\"interval\":\"once\",\n\t\"nextExecuteDate\":1663165405094\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/bpare",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"bpare"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manual",
+			"item": [
+				{
+					"name": "Manual-Trigger-Server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"534c2faa-032c-4452-98eb-1f45a1a026a6\",\r\n    \"UID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://zeweishi.azurewebsites.net/api/ManualTrigger",
+							"protocol": "https",
+							"host": [
+								"zeweishi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"ManualTrigger"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
